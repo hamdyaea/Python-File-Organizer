@@ -1,17 +1,17 @@
-![Awesome](awesome.svg) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) ![Python](python.png)  
+# Python File Organizer
 
-# Python file organizer
+**Developer:** Hamdy Abou El Anein  
+**Contact:** info@daylightlinux.ch  
+**License:** GPL v3 (see LICENSE).
 
+A Python 3 command-line organizer that groups regular files into category folders by extension.
 
-This Python3 Software need the path of the directory to organize as argument like :     
+**Safety:** Preview is the default. No files move unless you pass `--apply`. Existing destinations are never overwritten; hidden files and symlinks are skipped. Same-filesystem hard links are used to reserve destinations before unlinking originals. Unsupported filesystems may cause a file to be skipped rather than moved. Back up important directories before applying changes.
 
-python3 organizer.py /home/hamdy/Téléchargements 
+```sh
+python3 organizer.py ~/Downloads
+python3 organizer.py ~/Downloads --apply
+python3 -m unittest discover -s tests -v
+```
 
-
-## Developer - Author
-
-Hamdy Abou El Anein
-
-## Homepage
-
-http://www.daylightlinux.ch 
+The original implementation is preserved on the [old branch](https://github.com/hamdyaea/Python-File-Organizer/tree/old).
